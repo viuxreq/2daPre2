@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.css">
+  <title>CoderDescuentos - C.H</title>
+  
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- navbar  -->
+      <nav class="navbar navbar-expand-lg px-4">
+      <a class="navbar-brand" href="#"><img src="img/Sin título.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize">
+          <li class="nav-item active">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#about">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#store">Tienda</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+          
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+            <p class="mb-0">+54 9 1155223311</p>
+          </div>
+          
+          
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+            <!-- <p class="mb-0 text-capitalize"><span id="item-count">2 </span> items - $<span class="item-total">10.49</span></p> -->
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+    
+    <!-- banner  -->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize">Bienvenido a  <strong class="banner-title ">CoderDescuentos</strong></h1>
+          <a href="#store" class="btn banner-link text-uppercase my-2">Explorar</a>
+
+        </div>
+        <div id="cart" class="cart">
+      
+         
+          
+          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+            <h5>Total</h5>
+            <h5> $ <strong id="cart-total" class="font-weight-bold">0.00</strong> </h5>
+          </div>
+          >
+        
+          <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+            <button="#" id=".remove" class="btn btn-outline-secondary btn-black text-uppercase">Vaciar Carrito</a>
+            <button="#" class="btn btn-outline-secondary text-uppercase btn-pink">Verificar</a>
+          </div>
+          
+        
+        </div>
+      </div>
+    </div>
+
+
+
+
+  
+  </header>
+  
+  <!-- Sobre Nosotros -->
+  <section class="about py-5" id="about">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h1 class="text-capitalize">Sobre <strong class="banner-title ">Nosotros</strong></h1>
+          <p class="my-4 text-muted w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas
+            beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis
+            porro at dolorum! Ad!</p>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase ">Explorar</a>
+
+        </div>
+        <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+          <div class="about-img__container">
+            <img src="img/Sears-50-deportiva-080120.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+  <!-- Tienda -->
+  <section id="store" class="store py-5">
+    <div class="container">
+      <!-- Seccion Titulo -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">Nuestra<strong class="banner-title ">Tienda</strong></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all">Todos</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="calzado">Calzado</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="indumentaria">Indumentaría</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="gorra">Gorras Deportivas</a>
+          <!-- <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="doughnuts">doughnuts</a> -->
+        </div>
+      </div>
+      <!-- Busqueda -->
+      <div class="row">
+
+        <div class="col-10 mx-auto col-md-6">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend ">
+                <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder='Buscar...' id="search-item">
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <!--Finaliza-->
+      <!-- Item tienda-->
+        <div class="row" class="store-items" id="store-items">
+        <!-- Item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/shirt1.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Indumentaría</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">1495,99</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+        
+        </div>
+     
+        <!-- Item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="Indumentaría">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/shirt2.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Indumentaría Adidas Original</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">8100</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          
+        </div>
+       
+        <!-- Item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="indumentaria">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/shirt3.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Indumentaría Adidas Original</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">7400</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          
+        </div>
+       
+        <!-- Item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/shoe1.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Zapatilla Adidas Original</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5000</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- Item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/shoe2.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Zapatillas Adidas</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">10000</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          
+        </div>
+        
+        <!-- Item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/shoe3.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Zapatillas Adidas Original</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">8900</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          
+        </div>
+        
+        <!-- Item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/shoe4.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Zapatilla Adidas Original</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">6500</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          
+        </div>
+        
+        <!-- Item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/gorra2.jpg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Gorra Adidas Original</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">2450</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          
+        </div>
+        
+        <!-- Item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/gorra1.jpg" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Gorra Adidas Original</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">2100</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          
+        </div>
+        >
+        <!-- Item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/shirt3.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Indumentaria Adidas Original</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">7800</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          
+        </div>
+        
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/shirt2.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Indumentaria Adidas Original</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">6900</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          
+        </div>
+        
+        <!-- Item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
+          <div class="card ">
+            <div class="img-container">
+              <img src="img/shirt4.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Indumentaria Adidas Original</h5>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">4950</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          
+        </div>
+        
+
+      </div>
+  </section>
+  
+
+
+  <!-- modal-container -->
+  <div class="container-fluid ">
+    <div class="row lightbox-container align-items-center">
+      <div class="col-10 col-md-10 mx-auto text-right lightbox-holder">
+        <span class="lightbox-close"><i class="fas fa-window-close"></i></span>
+        <div class="lightbox-item"></div>
+        <span class="lightbox-control btnLeft"><i class="fas fa-caret-left"></i></span>
+        <span class="lightbox-control btnRight"><i class="fas fa-caret-right"></i></span>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="store">
+    <p class="text-center mb-0 text-muted">Simulador Productos - CoderHouse - Cáceres Requena</p>
+</footer>
+
+
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
